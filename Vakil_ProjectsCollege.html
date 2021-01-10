@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel='stylesheet' type='text/css'/>
+        <link href="my.css" rel='stylesheet' type='text/css'/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="main.js"></script>
+        <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+        <script language="javascript" type="text/javascript" src="cpe123work.js"></script>
+        <title>Projects</title>
+        <meta charset='utf-8'/>
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    </head>
+    <body>
+        <header id="mainfont">
+            <div class="row">
+                <div>
+                    <center>
+                        <h1><strong>Roshni</strong>  Vakil</h1>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Vakil_AboutMe.html">About Me</a></li>
+                    <li><a href="Vakil_WorkExperience.html">Work Experience</a></li>
+                    <li class="dropdown active">
+                        <a href="#" title="" class="toggle">Projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu list-group" id="mainfont">
+                            <li><a href="Vakil_ProjectsCollege.html">College</a></li>
+                            <li><a href="Vakil_ProjectsHighSchool.html">High School</a></li>
+                        </ul>
+                    </li> 
+                    <li><a href="Vakil_ContactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class='jumbotron'>
+            <center>
+                <p id="mainfont">"Change IS nature... the part we can influence. And it all starts when we decide" ~ Remy, <em>Ratatouille</em></p>
+            </center>
+        </div>
+        <section class="container" id="mainfont">
+            <div class="row" id="divspace">
+                <div class='row' id='h1space'>
+                    <h2 class="underline"><strong>College Projects</strong></h2>
+                </div>
+                <p><strong>Note: </strong>Underlined Words or Phrases Lead to Related Links</p>
+            </div>
+            <div class="row" id="divspace">
+                <h3><strong>Car Racing Game—Final CPE 123 Project</strong></h3>
+                <div id="left" style ="padding-right: 1em">
+                    <div class="thumbnail" id="wrapper" style="display:inline-block">
+                        <center>
+                            <div id="c1"></div>
+                            <p>Our final game (can be played on a laptop or desktop)</p>
+                        </center>
+                    </div>
+               </div>
+                <p>
+                    <strong>Course:</strong> CPE 123 (Introduction to Computing)
+                </p>
+                <p>
+                    <strong>Duration:</strong> 4 Weeks (11/2/20 - 11/30/20)
+                </p>
+                <p>
+                    <strong>Objective:</strong> To Create a Fully Functional Basic Game/Animated Short/Interactive Sketch
+                </p>
+                <p>
+                    <strong>Type of Project:</strong> Group Project
+                </p>
+                <p>
+                     For this final CPE 123 project, we were assigned to collaborate in a group of four to create a short animated scene, a small game, or some sort of interactive sketch (details about the project requirements can be found <a href= "Image/final_project_instructions.pdf" id="underline" target="_blank">here</a>). My group decided to create a game together. I came up with the basic concept of the game early on: a car racing game in which the cars are propelled forward by repeatedly pressing a certain key. It was based on my very first ever coding project (which can be found at the bottom of my high school projects section): a snail race game. My groupmates bought into the concept and added on their own requirements for the game. We decided that a main menu would display first, allowing the user to select from an array of cars. Then the race would take place. Turbos for the cars would be included. I led our meetings by setting up times and dates for Zoom calls outside of class, and then making sure we stayed on task and addressed pending issues methodically during these meetings. I delegated tasks so that everyone had something to work on each week before we came back to report the next meeting. The parts of the game that I was in charge of were: tying the movement of the cars to certain keys, varying the speeds and turbo frequencies of the different cars, programming in the speed reduction if the turbos were pressed out of time, and designing the side profiles of each car in the selection menu. The code for the finished game can be found <a href= "https://github.com/roshni-v/cpe123-projects-labs/blob/main/finalproject.js" id="underline" target="_blank">here</a>. Our professor commented that our project had nice physics and detail. Our thorough work earned us 104%. 
+                </p>
+            </div>
+            <div class="row" id="divspace">
+                <h3><strong>Basic Hierarchical Animation Lab</strong></h3>
+                <div id="left" style ="padding-right: 1em">
+                    <div class="thumbnail" id="wrapper" style="display:inline-block">
+                        <center>
+                            <div id="c2"></div>
+                            <p>My final frog-jumping animation (can be run on a laptop or desktop)</p>
+                        </center>
+                    </div>
+               </div>
+                <p>
+                    <strong>Course:</strong> CPE 123 (Introduction to Computing)
+                </p>
+                <p>
+                    <strong>Duration:</strong> Approximately 1.5 Weeks (11/9/20 - 11/20/20)
+                </p>
+                <p>
+                    <strong>Objective:</strong> To Animate an Articulated Character Using Hierarchical Modeling
+                </p>
+                <p>
+                    <strong>Type of Project:</strong> Individual Project
+                </p>
+                <p>
+                     The objective of this CPE 123 project was to primitively animate a hierarchically modeled character that we either designed ourselves or completed given the professor’s starter code. The instructions can be found <a href= "Image/lab6_instructions.pdf" id="underline" target="_blank">here</a>. I chose to create my own creature—a frog that would jump up and down. To begin, I created the body of the frog and then progressively built the limbs onto it. Then, I employed some trigonometry to calculate how the angles of the quads and calves segments needed to increase or decrease with the rising and falling of the frog’s body to convincingly simulate jumping. Explanations of my mathematical calculations can be found <a href= "Image/frog_leg_calculations.pdf" id="underline" target="_blank">here</a>. After the full motion was established, I incorporated a clickable region to be able to start and stop the clock controlling the jumping motion whenever the user desires. Finally, I worked in the background to make the whole animation more cohesive. <a href= "https://github.com/roshni-v/cpe123-projects-labs/blob/main/lab6.js" id="underline" target="_blank">This</a> was my final code. For going above and beyond, I earned a 104% on this lab.
+                </p>
+            </div>
+        </section>
+        <footer class="jumbotron" id="mainfont">
+            <div class="row">
+                <div class="container">
+                    <div class="pull-right">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

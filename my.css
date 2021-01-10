@@ -1,0 +1,49 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+#center {
+    margin: auto;
+    display:block;
+}
+#left {
+    float:left;
+}
+.underline {
+    text-decoration: underline;
+}
+#underline {
+    text-decoration: underline;
+}
+#mainfont {
+    font-family:Tw Cen MT;
+    font-size: 18px;
+}
+#roundcolor {
+    border-radius:5px;
+    background-color:LemonChiffon;
+    border:1px solid gold;
+}
+#divspace {
+    margin-bottom:10px;
+}
+#h1space {
+    margin-bottom: 30px;
+}
+h1, h2 {
+    font-family: "Julius Sans One";
+}
+#mainimage {
+    background-image:url('Image/bluebackground.jpg');
+}
+#homepagejumbo {
+    font-size: 2em;
+}
+
+.is-active .dropdown-menu {
+  display: block;
+}
