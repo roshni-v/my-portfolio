@@ -44,6 +44,12 @@
         </div>
         <section class="container" id="mainfont">
             <div class="row" id="divspace">
+                <div class='row' id='h1space'>
+                    <h2 class="underline"><strong>College Projects</strong></h2>
+                </div>
+                <p><strong>Note: </strong>Underlined Words or Phrases Lead to Related Links</p>
+            </div>
+            <div class="row" id="divspace">
                 <h3><strong>Word Search Puzzle Project</strong></h3>
                 <div id="left" style ="padding-right: 1em">
                     <div class="thumbnail">
@@ -67,12 +73,6 @@
                 <p>
                     The objective of this Fundamentals of Computer Science project was to write a program that would be able to take in a file with a 100-character string in its first line, convert that into a 10x10 puzzle, then take a string of words from the second line and check to see if the words are all in the puzzle (and where, if they are). Further instructional details can be found <a href='Image/Project3-WordFinder.pdf' id='underline' target="_blank">here</a>. We were provided several files containing these two input strings for testing purposes. As instructed, I began by first dividing the program’s tasks among several different functions and writing out pseudocode for each of them. I decided that one would create the puzzle from the first string, another would create a list of search words from the second string, and several others would check for words in each of the required directions (forward, up, down, diagonal). This pseudocode can be found in <a href='https://github.com/roshni-v/cpe101-word-finder-project' id='underline' target="_blank">my final program</a> below each fully fleshed out function. Once I completed this, I began working on implementation. I created a Point class that would hold an x and y coordinate (called row and column, respectively) for a character in a puzzle. I also implemented the repr function so that when the program displayed the location of the first character of a word in a puzzle, it returned a meaningful string and not a meaningless Point object. After this, I implemented each of the functions described prior. Once I created the function that checked for words in the forward direction, I called it in each of the other directions’ search functions. The only change I made was in flipping the puzzle accordingly each time. So for the downwards function, for example, I just switched the row and column values of each character in the puzzle, and then inputted that new puzzle into the forwards function. If the function found any of the desired words, it meant that the words were actually spelled downwards). Upon completing all of these functions, I imported them to a different Python file (a main file, essentially), where I called them all in a logical manner for the full program to function as required. I earned an A on this project.                </p>
                 </p>
-            </div>
-            <div class="row" id="divspace">
-                <div class='row' id='h1space'>
-                    <h2 class="underline"><strong>College Projects</strong></h2>
-                </div>
-                <p><strong>Note: </strong>Underlined Words or Phrases Lead to Related Links</p>
             </div>
             <div class="row" id="divspace">
                 <h3><strong>Car Racing Game—Final CPE 123 Project</strong></h3>
