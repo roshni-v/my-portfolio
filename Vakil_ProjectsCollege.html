@@ -48,6 +48,33 @@
                 </div>
                 <p><strong>Note: </strong>Underlined Words or Phrases Lead to Related Links</p>
             </div>
+             
+            <div class="row" id="divspace">
+                <h3><strong>Museum App Project</strong></h3>
+                <div id="left" style ="padding-right: 1em">
+                    <div class="thumbnail">
+                         <img src="Image/word_puzzle_output.JPG" id="left">
+                            <p><center>Part of an example output from my program</p>
+                         </img>
+                    </div>
+               </div>
+                <p>
+                    <strong>Course:</strong> CSC 308 & 309 (Software Engineering I & II)
+                </p>
+                <p>
+                    <strong>Duration:</strong> Approximately 2 Months (10/19/22 - 12/7/22)
+                </p>
+                <p>
+                    <strong>Objective:</strong> To Develop a Multi-Platform Application (Web, iOS, Android) For the Purpose of Advertising Local Museum Events and Allowing Users to View and Register for These Events
+                </p>
+                <p>
+                    <strong>Type of Project:</strong> Group Project
+                </p>
+                <p>
+                    The objective of this Fundamentals of Computer Science project was to write a program that would be able to take in a file with a 100-character string in its first line, convert that into a 10x10 puzzle, then take a string of words from the second line and check to see if the words are all in the puzzle (and where, if they are). Further instructional details can be found <a href='Image/Project3-WordFinder.pdf' id='underline' target="_blank">here</a>. We were provided several files containing these two input strings for testing purposes. As instructed, I began by first dividing the program’s tasks among several different functions and writing out pseudocode for each of them. I decided that one would create the puzzle from the first string, another would create a list of search words from the second string, and several others would check for words in each of the required directions (forward, up, down, diagonal). This pseudocode can be found in <a href='https://github.com/roshni-v/cpe101-word-finder-project' id='underline' target="_blank">my final program</a> below each fully fleshed out function. Once I completed this, I began working on implementation. I created a Point class that would hold an x and y coordinate (called row and column, respectively) for a character in a puzzle. I also implemented the repr function so that when the program displayed the location of the first character of a word in a puzzle, it returned a meaningful string and not a meaningless Point object. After this, I implemented each of the functions described prior. Once I created the function that checked for words in the forward direction, I called it in each of the other directions’ search functions. The only change I made was in flipping the puzzle accordingly each time. So for the downwards function, for example, I just switched the row and column values of each character in the puzzle, and then inputted that new puzzle into the forwards function. If the function found any of the desired words, it meant that the words were actually spelled downwards). Upon completing all of these functions, I imported them to a different Python file (a main file, essentially), where I called them all in a logical manner for the full program to function as required. I earned an A on this project.                </p>
+                </p>
+            </div>             
+             
             <div class="row" id="divspace">
                 <h3><strong>Word Search Puzzle Project</strong></h3>
                 <div id="left" style ="padding-right: 1em">
@@ -122,7 +149,7 @@
                     <strong>Type of Project:</strong> Individual Project
                 </p>
                 <p>
-                     The objective of this CPE 123 project was to primitively animate a hierarchically modeled character that we either designed ourselves or completed given the professor’s starter code. The instructions can be found <a href= "Image/lab6_instructions.pdf" id="underline" target="_blank">here</a>. I chose to create my own creature—a frog that would jump up and down. To begin, I created the body of the frog and then progressively built the limbs onto it. Then, I employed some trigonometry to calculate how the angles of the quads and calves segments needed to increase or decrease with the rising and falling of the frog’s body to convincingly simulate jumping. Explanations of my mathematical calculations can be found <a href= "Image/frog_leg_calculations.pdf" id="underline" target="_blank">here</a>. After the full motion was established, I incorporated a clickable region to be able to start and stop the clock controlling the jumping motion whenever the user desires. Finally, I worked in the background to make the whole animation more cohesive. <a href= "https://github.com/roshni-v/cpe123-projects-labs/blob/main/lab6.js" id="underline" target="_blank">This</a> was my final code. For going above and beyond, I earned a 104% on this lab.
+                     The purpose of this project was to go through the software development life-cycle to create a functioning .NET MAUI Blazor application fulfilling the criteria in the objective stated above. Documentation for the initial parts of this process (writing user stories, creating functional requirements, designing UI prototypes using Figma, etc) can be found <a href= "https://docs.google.com/document/d/1lJJncC1xGzU21ZrlIN44CzXY1LKXKPbs-OX08T_m4KA/edit?usp=sharing" id="underline" target="_blank">here</a>. I collaborated with my group on all of these processes, and was exclusively responsible for creating the “add new event” activity, class, and sequence diagrams found in the aforementioned documentation. Once we began coding, I focused primarily on developing the “Ticket Details” page of the application, as well as all of the data collection logic that went behind it (found in <a href= "https://github.com/arden2000/musei-fantastici/blob/main/musei/Pages/TicketDetails.razor" id="underline" target="_blank">TicketDetails.razor</a>). This necessitated familiarizing myself with the basics of C# and XAML (since that is what the MAUI framework utilizes), as well as the Radzen Blazor component library (since that is what we decided to use in order to streamline our UI and make it look more professional, as opposed to doing all styling primitively with CSS). My greatest challenges were figuring out 1) how to grab the information for each person inputted by the user, 2) how and when to populate new and distinct Person objects with this inputted data, and 3) how to populate new fields tied to a new Person object seamlessly whenever the user clicks on the “Add” button. During this development process, I researched and discovered how to implement code that mandates that text fields not be empty when a button is clicked, so I incorporated this feature in other pages of our application like our “Payment” page (<a href= "https://github.com/arden2000/musei-fantastici/blob/main/musei/Pages/Payment.razor" id="underline" target="_blank">Payment.razor</a>) and “Sign Up” page (<a href= "https://github.com/arden2000/musei-fantastici/blob/main/musei/Pages/SignUp.razor" id="underline" target="_blank">SignUp.razor</a>). Ultimately, I was definitely not my group’s strongest or most experienced developer, but I learned a lot during this project and contributed well and to the best of my abilities. I am a strong collaborator, whether I am in a position of technical strength and can therefore lead, or in a position where I am less experienced and follow the lead of others. As a result, I earned 100% on both peer evaluations associated with this project. At the end of the quarter, my group <a href= "https://www.canva.com/design/DAFT5X1T3VI/w42UQ06FJHX_RGeuZcQU7w/view?utm_content=DAFT5X1T3VI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" id="underline" target="_blank">presented</a> our final product and development process to our class. We earned an A on this project. Our final codebase can be found <a href= "https://github.com/arden2000/musei-fantastici" id="underline" target="_blank">here</a>.
                 </p>
             </div>
         </section>
