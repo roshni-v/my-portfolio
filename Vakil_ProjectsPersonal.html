@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel='stylesheet' type='text/css'/>
+        <link href="my.css" rel='stylesheet' type='text/css'/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="main.js"></script>
+        <title>Projects</title>
+        <meta charset='utf-8'/>
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    </head>
+    <body>
+        <header id="mainfont">
+            <div class="row">
+                <div>
+                    <center>
+                        <h1><strong>Roshni</strong>  Vakil</h1>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="index.html">About Me</a></li>
+<!--                     <li><a href="Vakil_WorkExperience.html">Work Experience</a></li> -->
+                    <li class="dropdown active">
+                        <a href="#" title="" class="toggle">Projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu list-group" id="mainfont">
+                            <li><a href="Vakil_ProjectsPersonal.html">Personal</a></li>
+                            <li><a href="Vakil_ProjectsCollege.html">College</a></li>
+                            <li><a href="Vakil_ProjectsHighSchool.html">High School</a></li>
+                        </ul>
+                    </li> 
+                    <li><a href="Vakil_ContactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class='jumbotron'>
+            <center>
+                <p id="mainfont">"Keep surprising people." ~ Dean Hardscrabble, <em>Monsters University</em></p>
+            </center>
+        </div>
+        <section class="container" id="mainfont">
+            <div class="row" id="divspace">
+                <div class='row' id='h1space'>
+                    <h2 class="underline"><strong>High School Projects</strong></h2>
+                </div>
+            </div>
+            <div class="row" id="divspace">
+                <h3><strong>Vanguard ETF Analysis Project</strong></h3>
+                <div class="col-sm-6" id="left">
+                    <div id="divspace" class='thumbnail'>
+                        <center>
+                            <img src="Image/ClearTheBoardGame.PNG" style="height: 100%; width: 100%; object-fit: contain">
+                                <p>The graphical user interface for my game, where the blue cards have been cleared, the cards you can see are opened, and the faintly checkered cards are closed and yet to be cleared.</p>
+                            </img>
+                        </center>                    
+                    </div>
+                </div>
+                <p>
+                    <strong>Duration:</strong> Approximately 1 Week (7/20/23 - 7/27/23)
+                </p>
+                <p>
+                    <strong>Objective:</strong> To Utilize Web-Scraping And Pandas Data Visualization and Analysis To Determine Which Vanguard ETFs Might Be the Best For Me to Invest In
+                </p>
+                <p>
+                    <strong>Type of Project:</strong> Individual Project
+                </p>
+                <p>
+                    The purpose of <a href="https://github.com/roshni-v/VanguardETFWebScrapeProject" id='underline' target="_blank">this project</a> was primarily to do some self-studying on web-scraping. I've heard a lot about the topic and I wanted to try my hand at it and maybe glean some information useful to my own life in the process. So I chose to develop a program capable of collecting and analyzing data about all the ETFs that Vanguard offers. I began by researching the ETF listings and planning the data collection process, identifying specific pieces of data that I wanted to analyze (number of stocks, ETF performance in the last x years, etc). Then, I looked into the Python library BeautifulSoup, which we had touched upon in my Data Science class for website data extraction. However, it quickly became clear that because Vanguard's ETF pages did not directly store information in HTML tables, I would not be able to access the data I wanted using solely BeautifulSoup. So I incorporated Selenium WebDriver and utilized the xpath of each specific data element to extract the information that I wanted. After collecting the data, my program saved the extracted information into a CSV file on my hard drive.
+                </p>
+                <p>
+                    From here, classic Pandas data analysis took over. In a <a href="https://colab.research.google.com/drive/1BmOB1y_k-gniVLlXwrf7uuw8OzfRMHOS?usp=sharing" id='underline' target="_blank">Google Collab notebook</a>, I imported my CSV file into a DataFrame for better visualization. Then, I filtered out entries based on my personal criteria (detailed explanations of my filtering decisions can be found in the Collab Notebook). In the end, I compiled a shortlist of ETFs that met my criteria.
+                </p>
+                <p>
+                    I did actually personally ended up investing a little bit into one of them. I'm excited to see how it performs and whether my program and analysis lead to a favorable outcome!
+                </p>
+                <p>
+                    If I had more time to fine-tune the project, I would conduct further research and implement methods to expedite and ensure successful data collection every time the program is executed. As it stands, the program takes several minutes to open each ETF page and gather data. While attempting to accelerate the process by eliminating the implemented waits, the improvement in speed is only marginal, and it increases the risk of incomplete page loading, leading to the retrieval of empty values instead of fully loaded data. However, perhaps this is just the nature of webscraping using Selenium.
+                </p>
+            </div>
+        </section>
+        <footer class="jumbotron" id="mainfont">
+            <div class="row">
+                <div class="container">
+                    <div class="pull-right">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
